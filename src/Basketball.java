@@ -12,11 +12,11 @@ public class Scene
 	private Image img;
 	private AffineTransform tx;
 	
-	public Scene(int nx, int ny)
+	public Scene(int newX, int newY)
 	{
 		img = getImage("basketball.gif");
-		x = nx;
-		y = ny;
+		x = newX;
+		y = newY;
 		tx = AffineTransform.getTranslateInstance(x,y);
 		init(x,y);
 	}
