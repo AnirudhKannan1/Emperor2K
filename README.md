@@ -14,9 +14,12 @@ The basketball class features a hand-drawn basketball pixel, and it is coded for
 
 ![Basketball Code](https://user-images.githubusercontent.com/90531142/170741209-d27227dc-d523-48ea-8b3d-36f5bcaa3990.png)
 
+![Hoop gif](https://user-images.githubusercontent.com/90531142/170743492-4ee2f714-0450-49ec-915a-2d8fe422e4ab.gif)
+
 ## Player Class:
 
-This class features a hand-drawn player using pixel art, and that player is coded for two-directional movement. The movement of the player is controlled by the W and R keys, and similarly to the basketball class, the player sprite features collision detection, as well as collision with the ball, which groups the two sprites, allowing both objects to be controlled using the W and R keys, or the up, down, left and right keys.
+This class features a hand-drawn player using pixel art, and that player is coded for two-directional movement. The movement of the player is controlled by the W and R keys, and similarly to the basketball class, the player sprite features collision detection, as well as collision with the ball, which groups the two sprites, allowing both objects to be control
+ed using the W and R keys, or the up, down, left and right keys.
 
 ![Player Code](https://user-images.githubusercontent.com/90531142/170742773-9e517342-9783-4aa3-b2ba-d79db539e1bf.PNG)
 
