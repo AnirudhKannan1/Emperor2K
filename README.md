@@ -9,6 +9,8 @@ This is a single player basketball game where the player uses key commands to pr
 
 The basketball class features a hand-drawn basketball pixel, and it is coded for the ball to be moved in four directions. The movement of the ball is controlled by the up, down, right, and left arrows, and using these keys moves the ball in the corresponding direction. The ball is also equipped with collision detection, so that it is unable to leave the screen and go "out of bounds". When the ball collides with the player, the player posesses the ball, and the movement for both objects can be controlled with a singular set of keys.
 
+![Basketball Code](https://user-images.githubusercontent.com/90531142/170741209-d27227dc-d523-48ea-8b3d-36f5bcaa3990.png)
+
 ## Player Class:
 
 This class features a hand-drawn player using pixel art, and that player is coded for two-directional movement. The movement of the player is controlled by the W and R keys, and similarly to the basketball class, the player sprite features collision detection, as well as collision with the ball, which groups the two sprites, allowing both objects to be controlled using the W and R keys, or the up, down, left and right keys.
@@ -19,3 +21,4 @@ This class features two hand-drawn hoops using pixel art, and these hoops are au
 
 
 ![Untitled drawing (4)](https://user-images.githubusercontent.com/90531142/170739405-06f45fe1-0d44-4ab9-b6b8-c7c5fe7be4f1.png)
+
