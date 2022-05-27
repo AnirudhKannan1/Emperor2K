@@ -18,3 +18,4 @@ This class features a hand-drawn player using pixel art, and that player is code
 This class features two hand-drawn hoops using pixel art, and these hoops are automatically positioned at the right and left sides of the screen, using a coded coordinate system. These hoops do not move, however, when the ball passes through the hoop, one point is added to the score, by virtue of the scoring method. 
 
 
+![Untitled drawing (4)](https://user-images.githubusercontent.com/90531142/170739405-06f45fe1-0d44-4ab9-b6b8-c7c5fe7be4f1.png)
