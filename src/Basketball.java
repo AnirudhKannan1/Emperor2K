@@ -5,23 +5,26 @@ import java.awt.Toolkit;
 import java.awt.geom.AffineTransform;
 import java.net.URL;
 
-public class Scene 
+public class Basketball 
 {
-	private int x;
-	private int y;
-	private Image img;
-	private AffineTransform tx;
+	public static int x; 
+	public static int y;
+	public static int score;
+	private static Image img;
+	private static AffineTransform tx;
+	public static int p1Score = 0;
+	public static int p2Score = 0;
 	
-	public Scene(int newX, int newY)
+	public Basketball(int newX, int newY)
 	{
-		img = getImage("basketball.gif");
+		img = getImage("/imgs/basketball.gif");
 		x = newX;
 		y = newY;
 		tx = AffineTransform.getTranslateInstance(x,y);
 		init(x,y);
 	}
 	
-	public void changePicture(String newFileName) 
+	public static void changePicture(String newFileName) 
 	{
 		img = getImage(newFileName);
 		init(x, y);
@@ -44,20 +47,66 @@ public class Scene
 	private void update()
 	{
 		tx.setToTranslation(x, y);
-		tx.scale(1, 1.8);
+		
+		if(Player1.shot==true)
+		{
+			x-=5;
+			y-=5;
+		}
+		tx.scale(2, 2);
 	}
 	
-	private void init(double a, double b) 
+	private static void init(double a, double b) 
 	{
 		tx.setToTranslation(a, b);
 		tx.scale(.5, 1);
 	}
+	
+	public static void p1Score()
+	{
+		p1Score++;
+	}
+	
+	public static void p2Score()
+	{
+		p2Score++;
+	}
+	
+	public int moveRight()
+	{
+		return 1;
+	}
+	
+	public int moveLeft()
+	{
+		return -1;
+	}
+	
+	public static int getX()
+	{
+		return x;
+	}
+	
+	public static int getY()
+	{
+		return y;
+	}
+	
+	public static void setX(int n)
+	{
+		x = n;
+	}
+	public static void setY(int n)
+	{
+		y = n;
+	}
+	
 
-	private Image getImage(String path)
+	private static Image getImage(String path)
 	{
 		Image tempImage = null;
 		try {
-			URL imageURL = Scene.class.getResource(path);
+			URL imageURL = Basketball.class.getResource(path);
 			tempImage = Toolkit.getDefaultToolkit().getImage(imageURL);
 		} catch (Exception e) {
 			e.printStackTrace();
