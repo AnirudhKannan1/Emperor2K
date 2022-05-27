@@ -12,3 +12,9 @@ The basketball class features a hand-drawn basketball pixel, and it is coded for
 ## Player Class:
 
 This class features a hand-drawn player using pixel art, and that player is coded for two-directional movement. The movement of the player is controlled by the W and R keys, and similarly to the basketball class, the player sprite features collision detection, as well as collision with the ball, which groups the two sprites, allowing both objects to be controlled using the W and R keys, or the up, down, left and right keys.
+
+## Hoop Class:
+
+This class features two hand-drawn hoops using pixel art, and these hoops are automatically positioned at the right and left sides of the screen, using a coded coordinate system. These hoops do not move, however, when the ball passes through the hoop, one point is added to the score, by virtue of the scoring method. 
+
+
