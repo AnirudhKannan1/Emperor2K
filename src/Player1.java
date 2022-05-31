@@ -67,15 +67,12 @@ public class Player1
 	{	
 		if(Player1.hasBall() == true)
 		{
-			while(Basketball.getX()+67 >= 225)
-			{
-				shot = true;
-			}
+			Basketball.setX(160);
+			Basketball.setY(555);
 			
 			HoopLeft.changePicture("/imgs/hoopleft_score.gif");
 			Basketball.score++;		
 		}
-		shot=false;
 	}
 	
 	public static void moveRight()
@@ -85,8 +82,8 @@ public class Player1
 	
 	public static void moveLeft()
 	{
-		x-=8
-				;
+		x-=8;
+				
 	}
 	
 	public static boolean hasBall()
